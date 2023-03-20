@@ -11,7 +11,7 @@ function App() {
       <p>You clicked -[ {count} ]- times</p>
       <button onClick={() => setCount(count + 1)}> Click me Increase</button>
 
-      <button onClick={() => setCount(count - 1)}> Click me Decrease </button>
+      <button onClick={() => setCount(count <= 0 ? count : count - 1)}> Click me Decrease </button>
     </div>
   );
 }
